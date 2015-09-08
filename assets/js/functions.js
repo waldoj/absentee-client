@@ -84,7 +84,7 @@
 		// Define method for retrieving query params -> assoc array
         	function getUrlVars()
         	{
-        		var vars = [], hash;
+			var vars = [], hash;
 			uri = decodeURIComponent(window.location.href.replace(/\+/g, " "));
 			var hashes = uri.slice(uri.indexOf('?') + 1).split('&');
         		for(var i = 0; i < hashes.length; i++)
