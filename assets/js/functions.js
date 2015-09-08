@@ -85,8 +85,8 @@
         	function getUrlVars()
         	{
         		var vars = [], hash;
-        		var hashes = window.location.href.slice(
-        			window.location.href.indexOf('?') + 1).split('&');
+			uri = decodeURIComponent(window.location.href.replace(/\+/g, " "));
+			var hashes = uri.slice(uri.indexOf('?') + 1).split('&');
         		for(var i = 0; i < hashes.length; i++)
         		{
         			hash = hashes[i].split('=');
